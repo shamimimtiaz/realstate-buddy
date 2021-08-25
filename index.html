@@ -30,12 +30,39 @@
             </li>
         </ul>
         </nav>
-      </header> 
-
+      </header>
+      
     <!-- hero/jumbotron -->
-    <section>
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our professional will schedule a consult</p>
+        <!--Add form element-->
+        <form>
+            <lebel for="name">Enter full name</lebel>
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+            <lebel for="email">Enter email address</lebel>
+            <input type="text" placeholder="Email Address" name="email" id="email" class="form-input" />
+            <lebel for="phone">Enter a telephone number</lebel>
+            <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+            <p>
+                Have you talked to any professional before?
+                <input type="radio" name="professional-confirm" id="professional-yes" />
+                <lebel for="professional-yes">Yes</lebel>
+                <input type="radio" name="professional-confirm" id="professional-no" />
+                <lebel for="professional-no">NO</lebel> 
+            </p>
+            <p>
+                <lebel for="checkbox"> I acknowlwdge that I am 18 years of age</lebel>
+                <input type="checkbox" name="age-confirm" id="checkbox" />
+            </p>
+            <button type="submit">
+                Submit
+            </button> 
+        </form>
+        </div>
     </section>
-
+<!-- end hero -->
     <!-- "what we do" section -->
     <section>
     <h2>What We Do</h2>
@@ -59,6 +86,10 @@
     <!-- footer -->
     <footer>
     <h2> ❤️ Made with love by Realstate Buddy.</h2>
+    <div>
+        <a href="#">Read Our Privacy Policy</a><br /> <!-- "placeholder link for connect with URl later -->
+        &copy; 2019 Realstate Buddy, Inc.
+    </div>    
     </footer>
     </body> 
 </html> 
